@@ -1,17 +1,18 @@
-# cars-ads-app
-Projeto – Aplicativo web com Streamlit e Render 
+# cars-ads-app-2
+Projeto – Aplicativo web com Streamlit, Pandas, Plotly e Render.
+
 # Dashboard de Análise de Anúncios de Veículos
 
 ## Descrição
-Este aplicativo web permite visualizar e analisar dados de anúncios de vendas de carros nos EUA, podendo filtrar o veículo por ano e valor com interatividade.
+Este aplicativo web permite visualizar e analisar dados de anúncios de vendas de carros usados nos EUA, podendo filtrar o veículo por ano e valor com interatividade.
 
 ## Funcionalidades
 - Histograma interativo
 - Gráfico de dispersão
 - Interface web responsiva e interativa
 
-## Acesso ao aplicativo
-[Link do aplicativo no Render - será adicionado após deploy]
+## Acesso ao aplicativo funcionando
+[https://cars-ads-app-2.onrender.com](https://cars-ads-app-2.onrender.com)
 
 ## Como usar
 1. Clique no botão "Exibir histograma de preços" para visualizar a distribuição da quilometragem
@@ -24,4 +25,12 @@ Este aplicativo web permite visualizar e analisar dados de anúncios de vendas d
 - Streamlit
 - Plotly
 - Pandas
+
+## 📁 Estrutura do Projeto
+
+- `app.py` - Aplicativo principal Streamlit
+- `vehicles_us.csv` - Conjunto de dados
+- `requirements.txt` - Dependências do projeto
+- `notebooks/EDA.ipynb` - Análise exploratória de dados
+
 
