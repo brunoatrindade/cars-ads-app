@@ -1,2 +1,3 @@
-flask
-gunicorn
+pandas
+plotly_express
+streamlit
