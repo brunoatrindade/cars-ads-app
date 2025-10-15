@@ -6,7 +6,7 @@ import plotly.express as px
 # CONFIGURAÇÃO INICIAL DA PÁGINA
 # ==============================
 st.set_page_config(
-    page_title="Dashboard de Anúncios de Carros",
+    page_title="Dashboard de Anúncios de Carros Usados",
     page_icon="🚗",
     layout="wide"
 )
@@ -14,11 +14,11 @@ st.set_page_config(
 # ==============================
 # CABEÇALHO
 # ==============================
-st.title("🚘 Dashboard de Anúncios de Carros")
+st.title("🚘 Dashboard de Anúncios de Carros Usados")
 st.markdown(
     """
-    Explore o dataset de anúncios de carros usados com modelos e valor.  
-    Use os **filtros na barra lateral** para personalizar a análise e visualizar os dados de forma interativa.
+    Explore o dataset de anúncios de carros usados com modelos, ano e valor.  
+    Use os **filtros na barra lateral** para personalizar a sua pesquisa e visualisar os dados de forma interativa.
     """
 )
 st.divider()
@@ -79,7 +79,7 @@ with col1:
     show_hist = st.checkbox("Exibir histograma de preços", value=True)
 with col2:
     show_scatter = st.checkbox(
-        "Exibir gráfico de dispersão (Preço x Quilometragem)")
+        "Exibir gráfico de dispersão (Preço x Km)")
 
 # Criar histogramas
 if show_hist:
@@ -101,7 +101,7 @@ if show_scatter:
         x="odometer",
         y="price",
         color="model_year",
-        title="Preço vs Quilometragem (com coloração por ano)",
+        title="Preço vs Km (com coloração por ano)",
         color_continuous_scale="Turbo"
     )
     st.plotly_chart(fig_scatter, use_container_width=True)
