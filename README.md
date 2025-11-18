@@ -1,4 +1,4 @@
-# cars-ads-app-2
+# cars-ads-app
 Projeto – Aplicativo web com Streamlit, Pandas, Plotly e Render.
 
 # Dashboard de Análise de Anúncios de Veículos
@@ -26,7 +26,6 @@ Este aplicativo web permite visualizar e analisar dados de anúncios de vendas d
 - Plotly
 - Pandas
 
-## 📁 Estrutura do Projeto
 
 - `app.py` - Aplicativo principal Streamlit
 - `vehicles_us.csv` - Conjunto de dados
